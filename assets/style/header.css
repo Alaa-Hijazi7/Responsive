@@ -49,13 +49,13 @@ nav a:hover,
   padding: 10px 25px;
   border: 3px solid #120355;
   background-color: #5b0ce1;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 20px;
   margin: 0 10px;
   transition: all 0.2s;
   font-weight: 600;
-  color: #120355;
+  color: #ffffff;
 }
 .header-buttons button:hover {
   background-color: #3f03a7;
