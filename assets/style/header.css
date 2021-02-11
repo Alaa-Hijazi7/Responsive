@@ -1,46 +1,75 @@
-#container-div {
-  width: 90%;
-  border: 2px solid rgb(255, 187, 0);
+nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+  padding: 10px 25px;
   align-items: center;
-  border-radius: 5px;
-  background-color: rgb(252, 245, 181);
-  margin: auto;
+}
+nav a {
+  text-decoration-line: none;
+  color: black;
+  margin: 0 5px;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+nav a:hover,
+.active {
+  background-color: #6142e9;
+  transition: all 0.3s;
+}
+.background-header-image {
+  display: block;
+  position: relative;
+  background: url(../images/fortnite-image.jpg) 50% 0 no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header-body {
+  height: 42em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(28 2 81 / 40%));
+  color: #f3558e;
+}
+.header-text {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: white;
+  font-size: 30px;
   transition: all 0.5s;
-  filter: drop-shadow(0px 0px 4px rgb(255, 187, 0));
-  margin-top: 5em;
 }
-#container-div:hover {
-  filter: drop-shadow(9px 10px 20px rgb(255, 187, 0));
-  transform: translateY(-22px);
-}
-#container-div img {
-  width: 30%;
-  height: 100%;
+.header-buttons button {
+  outline: none;
+  padding: 10px 25px;
+  border: 3px solid #120355;
+  background-color: #5b0ce1;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: all 0.2s;
+  font-weight: 600;
+  color: #120355;
 }
-#container-div .text {
-  padding: 10px 10px 10px 50px;
+.header-buttons button:hover {
+  background-color: #3f03a7;
 }
-#container-div .text p {
-  font-size: 24px;
-}
-@media only screen and (max-width: 768px) {
-  #container-div {
+@media screen and (max-width: 530px) {
+  nav {
     flex-direction: column;
   }
-  #container-div img {
-    width: 90%;
-    margin-top: 20px;
+  nav > div {
+    margin-top: 10px;
   }
-  #container-div .text h1 {
-    font-size: 20px;
-  }
-  #container-div .text p {
-    font-size: 15px;
-  }
-  #container-div .text {
-    padding: 10px 10px 10px 20px;
+}
+@media screen and (max-width: 332px) {
+  nav a {
+    font-size: 12px;
   }
 }
