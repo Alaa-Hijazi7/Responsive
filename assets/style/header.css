@@ -2,19 +2,22 @@ nav {
   display: flex;
   justify-content: space-between;
   background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
-  padding: 10px 25px;
+  padding: 10px 70px;
   align-items: center;
 }
 nav a {
   text-decoration-line: none;
-  color: black;
+  color: white;
   margin: 0 5px;
   padding: 5px 15px;
   border-radius: 4px;
 }
+nav h2 {
+  color: white;
+}
 nav a:hover,
 .active {
-  background-color: #6142e9;
+  background-color: #4b12ad;
   transition: all 0.3s;
 }
 .background-header-image {
@@ -32,7 +35,11 @@ nav a:hover,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(28 2 81 / 40%));
+  background: linear-gradient(
+    to right,
+    rgb(64 26 123 / 77%),
+    rgb(16 7 29 / 72%)
+  );
   color: #f3558e;
 }
 .header-text {
@@ -41,13 +48,12 @@ nav a:hover,
   padding: 10px 40px;
   border-radius: 4px;
   color: white;
-  font-size: 30px;
+  font-size: 42px;
   transition: all 0.5s;
 }
 .header-buttons button {
   outline: none;
-  padding: 10px 25px;
-  border: 3px solid #120355;
+  padding: 2px 25px;
   background-color: #5b0ce1;
   border-radius: 30px;
   cursor: pointer;
@@ -56,12 +62,14 @@ nav a:hover,
   transition: all 0.2s;
   font-weight: 600;
   color: #ffffff;
+  border: none;
 }
 .header-buttons button:hover {
   background-color: #3f03a7;
 }
 @media screen and (max-width: 530px) {
   nav {
+    padding: 10px 25px;
     flex-direction: column;
   }
   nav > div {

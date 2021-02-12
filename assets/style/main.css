@@ -11,7 +11,7 @@
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #55515b;
-  background: linear-gradient(to top, rgb(78 2 224 / 45%), rgb(70 66 77 / 56%));
+  background: #7230efeb;
 }
 ::-webkit-scrollbar-thumb {
   background: #46424d;
