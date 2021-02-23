@@ -6,19 +6,3 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #55515b;
-  background: #7230efeb;
-}
-::-webkit-scrollbar-thumb {
-  background: #46424d;
-  border-radius: 10px;
-  transition: all 0.2s;
-}
-::-webkit-scrollbar-thumb:hover {
-  transition: all 0.2s;
-  background: #3e3947;
-}
